@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoYo</title>
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+  <!--Animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Roboto fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+  <!-- Angular material fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" ng-app="GoYo" ng-cloak>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" >GoYo</a>
+                
+<!--
+                <a class="navbar-brand" href="#">
+    <img src="/img/GOYO_LOGO.png" width="30" height="30" alt="">
+  </a>
+-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+<!--                        <a class="page-scroll" href="#download"></a>-->
+                        <md-button layout="row" class="md-raised md-primary">
+            <i class="material-icons">home</i>
+            Home
+          </md-button>
+                    </li>
+                    <li class="dropdown">
+<!--                        <a class="page-scroll" href="#" data-toggle="dropdown" class="dropdown-toggle">-->
+<!--
+                         <md-nav-item md-nav-click="goto('page1')" name="page1">
+        Page One
+      </md-nav-item>
+-->
+                            <md-button layout="row" data-toggle="dropdown" class=" md-raised md-primary dropdown-toggle">
+                                <i class="material-icons">track_changes</i>Tracking</md-button>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="#tracking">School Bus</a></li>
+                            <li><a class="page-scroll" href="#tracking">Corporate Bus</a></li>
+                            <li><a class="page-scroll" href="#tracking">Logistics</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+<!--                        <a class="page-scroll" href="#" data-toggle="dropdown" class="dropdown-toggle">Rides</a>-->
+                        <md-button layout="row" data-toggle="dropdown" class="md-raised md-primary dropdown-toggle">
+                                <i class="material-icons">directions_car</i>Rides</md-button>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="#tracking">Auto</a></li>
+                            <li><a class="page-scroll" href="#tracking">Bikes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+<!--                        <a class="page-scroll" href="#" data-toggle="dropdown" class="dropdown-toggle">Delivery</a>-->
+                        <md-button layout="row" data-toggle="dropdown" class="md-raised md-primary dropdown-toggle" md-colors="{background:#4CAF50}">
+                                <i class="material-icons">local_shipping</i>Delivery</md-button>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="#tracking">Food</a></li>
+                            <li><a class="page-scroll" href="#tracking">Medicine</a></li>
+                            <li><a class="page-scroll" href="#tracking">Document</a></li>
+                            <li><a class="page-scroll" href="#tracking">E-Commerce</a></li>
+                        </ul>
+                    </li>
+                    <li>
+<!--                        <a class="page-scroll" href="#contact">Contact Us</a>-->
+                         
+                        <md-button layout="row" class="md-raised md-primary">
+                                <i class="material-icons">call</i>Contact Us</md-button>
+                    </li> 
+                    <li>
+<!--                        <a class="page-scroll" href="#contact">Career</a>-->
+                        <md-button layout="row" class="md-raised md-primary">
+                                <i class="material-icons">trending_up</i>Career</md-button>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>We are Technology Enthusiast having broad range of experience in IT / Marketing / Finance fields.</h1>
+<!--                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    <section id="download" class="download bg-primary text-center" style="padding: 80px 0px" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                    <p>GoYo Technologies Pvt. Ltd., is an Indian online transportation network company.</p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/GOYO_LOGO.png" alt=""></a>
+                        <p></p>
+                        <p>Email: ashit@goyo.in </p>
+<!--                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="download bg-primary text-center" style="padding: 80px 0px" >
+        <div class="container" >
+            <div class="row">
+     <h1 class="text-center">Where In The World?</h1>
+
+    <div id="map-canvas"></div>
+    <hr>
+    <div class="col-sm-8">
+        <div class="row form-group">
+            <div class="col-xs-3">
+                <input class="form-control" id="firstName" name="firstName" placeholder="First Name" required="" type="text">
+            </div>
+            <div class="col-xs-3">
+                <input class="form-control" id="middleName" name="firstName" placeholder="Middle Name" required="" type="text">
+            </div>
+            <div class="col-xs-4">
+                <input class="form-control" id="lastName" name="lastName" placeholder="Last Name" required="" type="text">
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-5">
+                <input class="form-control" name="email" placeholder="Email" required="" type="email">
+            </div>
+            <div class="col-xs-5">
+                <input class="form-control" name="phone" placeholder="Phone" required="" type="email">
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-10">
+                <input class="form-control" placeholder="Website URL" required="" type="homepage">
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-10">
+                <button class="btn btn-default pull-right">Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 pull-right"> <address>
+          <strong>GoYo</strong><br>
+          <span id="map-input">
+          Planet Earth<br>
+          Planet Earth<br>
+          </span>
+          P: (123) 456-7890
+        </address>
+ <address>
+          <strong>Email Us</strong><br>
+          <a href="mailto:#">first.last@example.com</a>
+        </address> 
+    </div>
+</div>
+<!--/row-->
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Who We Are</h2>
+                        <p class="text-muted">What Awesome stuff we can Do for You!</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-directions text-primary"></i>
+                                    <h3>We cater to Auto and Bike segment!</h3>
+<!--
+                                    <p class="text-muted">We cater to Auto and Bike segment!
+We cater to people commute to goods delivery.
+We envisage to do School Bus Tracking to Logistic Tracking.
+We want to help young parents to track kids (school Bus).
+We also intent to train & organize pulse of transportation network i.e. Drivers.<p>
+-->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-present text-primary"></i>
+                                    <h3>We cater to people commute to goods delivery.</h3>
+<!--                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-location-pin text-primary"></i>
+                                    <h3>We want to help young parents to track kids (school Bus).</h3>
+<!--                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>-->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-user-follow text-primary"></i>
+                                    <h3>We also intent to train & organize pulse of transportation network i.e. Drivers..</h3>
+<!--                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Stop waiting.<br>Start building.</h2>
+                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+-->
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <ul class="list-inline list-social">
+                <li class="social-twitter">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social-google-plus">
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 GoYo. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+    <script>/* google maps */
+
+google.maps.visualRefresh = true;
+
+var map;
+function initialize() {
+	var geocoder = new google.maps.Geocoder();
+	var address = $('#map-input').text(); /* change the map-input to your address */
+	var mapOptions = {
+    	zoom: 15,
+    	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+	
+  	if (geocoder) {
+      geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+          map.setCenter(results[0].geometry.location);
+
+            var infowindow = new google.maps.InfoWindow(
+                {
+                  content: address,
+                  map: map,
+                  position: results[0].geometry.location,
+                });
+
+            var marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                map: map, 
+                title:address
+            }); 
+
+          } else {
+          	alert("No results found");
+          }
+        }
+      });
+	}
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+/* end google maps */</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!--Custom Js Library -->
+  <script src="js/custom.js"></script>
+    
+ <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    
+</body>
+
+</html>
